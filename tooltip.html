@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+</head>
+
+<body>
+    <main class="w-full overflow-auto p-8 bg-gray-50">
+        <div class="w-full p-4 py-2 !h-fit mb-6">
+            <div class="bg-white p-6 rounded-lg shadow-lg mb-6">
+                <h2 class="text-lg mb-6">Tooltip Directions</h2>
+                <div class="flex gap-4">
+                    <!-- Tooltip on top -->
+                    <button class="btn btn-primary relative group">
+                        Tooltip on top
+                        <span
+                            class="btn btn-dark w-full absolute -top-11 left-1/2 transform -translate-x-1/2 bg-purple-500 text-white text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100">
+                            Tooltip on top
+                        </span>
+                    </button>
+
+                    <!-- Tooltip on right -->
+                    <button class="btn btn-primary relative group">
+                        Tooltip on right
+                        <span
+                            class="btn btn-dark w-full absolute z-10 top-1/2 left-full ml-2 transform -translate-y-1/2 bg-purple-500 text-white text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                            Tooltip on right
+                        </span>
+                    </button>
+
+                    <!-- Tooltip on bottom -->
+                    <button class="btn btn-primary relative group">
+                        Tooltip on bottom
+                        <span
+                            class="btn btn-dark w-full absolute top-full mt-2 left-1/2 transform -translate-x-1/2 bg-purple-500 text-white text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                            Tooltip on bottom
+                        </span>
+                    </button>
+
+                    <!-- Tooltip on left -->
+                    <button class="btn btn-primary relative group">
+                        Tooltip on left
+                        <span
+                            class="btn btn-dark w-full absolute top-1/2 right-full mr-2 transform -translate-y-1/2 bg-purple-500 text-white text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                            Tooltip on left
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="flex gap-5 justify-center mt-4">
+                <!-- Tooltips on Links -->
+                <div class="w-full bg-white p-6 rounded-lg shadow-lg mb-6">
+                    <h2 class="text-lg mb-4">Tooltips on links</h2>
+                    <p>Hover on the link to view the <a href="#" class="relative group text-blue-500 underline">
+                            Tooltip
+                            <span
+                                class="btn btn-primary !w-full absolute -top-10 left-1/2 transform -translate-x-1/2 bg-blue-500 text-white text-xs rounded py-1 px-2 mt-1 opacity-0 group-hover:opacity-100">
+                                Tooltip text
+                            </span>
+                        </a></p>
+                </div>
+
+                <!-- Tooltips on Icons -->
+                <div class="w-full bg-white p-6 rounded-lg shadow-lg mb-6">
+                    <h2 class="text-lg mb-4">With an SVG's</h2>
+                    <div class="flex gap-6 items-center justify-start bg-white">
+
+                        <!-- Tooltip on Home icon -->
+                        <button class="relative group text-blue-500 text-2xl">
+                            <i class="fas fa-home"></i>
+                            <span
+                                class="absolute w-max -top-10 left-1/2 transform -translate-x-1/2 bg-blue-500 text-white text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                                Home
+                            </span>
+                        </button>
+
+                        <!-- Tooltip on Mail icon -->
+                        <button class="relative group text-violet-500 text-2xl">
+                            <i class="fas fa-envelope"></i>
+                            <span
+                                class="absolute w-max -top-10 left-1/2 transform -translate-x-1/2 bg-violet-500 text-white text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                                Message
+                            </span>
+                        </button>
+
+                        <!-- Tooltip on User Plus icon -->
+                        <button class="relative group text-yellow-500 text-2xl">
+                            <i class="fas fa-user-plus"></i>
+                            <span
+                                class="absolute w-max -top-10 left-1/2 transform -translate-x-1/2 bg-yellow-500 text-white text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                                Add User
+                            </span>
+                        </button>
+
+                        <!-- Tooltip on Paper Plane icon -->
+                        <button class="relative group text-blue-500 text-2xl">
+                            <i class="fas fa-paper-plane"></i>
+                            <span
+                                class="absolute w-max -top-10 left-1/2 transform -translate-x-1/2 bg-blue-500 text-white text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                                Send File
+                            </span>
+                        </button>
+
+                        <!-- Tooltip on More icon -->
+                        <button class="relative group text-green-500 text-2xl">
+                            <i class="fas fa-ellipsis-h"></i>
+                            <span
+                                class="absolute w-max -top-10 left-1/2 transform -translate-x-1/2 bg-green-500 text-white text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                                Action
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Colored Tooltips -->
+            <div class="bg-white p-6 rounded-lg shadow-lg mb-6">
+                <h2 class="text-lg mb-5">Colored Tooltips</h2>
+                <div class="flex gap-4 flex-wrap">
+
+                    <!-- Primary Tooltip -->
+                    <div class="relative group">
+                        <button class="bg-blue-500 text-white px-4 py-2 rounded">Primary Tooltip</button>
+                        <span
+                            class="absolute w-full -top-9 left-1/2 transform -translate-x-1/2 bg-blue-500 text-white text-xs rounded p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                            Primary Tooltip
+                        </span>
+                    </div>
+
+                    <!-- Primary1 Tooltip -->
+                    <div class="relative group">
+                        <button class="bg-primary1 text-white px-4 py-2 rounded">Primary1 Tooltip</button>
+                        <span
+                            class="absolute w-full top-full mt-2 left-1/2 z-10 transform -translate-x-1/2 bg-primary1 text-white text-xs rounded p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                            Primary1 Tooltip
+                        </span>
+                    </div>
+
+                    <!-- Primary2 Tooltip -->
+                    <div class="relative group">
+                        <button class="bg-primary2 text-white px-4 py-2 rounded">Primary2 Tooltip</button>
+                        <span
+                            class="absolute w-full z-10 left-full ml-2 transform -translate-x-1/2 bg-primary2 text-white text-xs rounded p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                            Primary2 Tooltip
+                        </span>
+                    </div>
+
+                    <!-- Primary3 Tooltip -->
+                    <div class="relative group">
+                        <button class="bg-primary3 text-white px-4 py-2 rounded">Primary3 Tooltip</button>
+                        <span
+                            class="absolute w-full -top-9 left-1/2 transform -translate-x-1/2 bg-primary3 text-white text-xs rounded p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                            Primary3 Tooltip
+                        </span>
+                    </div>
+
+                    <!-- Secondary Tooltip -->
+                    <div class="relative group">
+                        <button class="bg-violet-500 text-white px-4 py-2 rounded">Secondary Tooltip</button>
+                        <span
+                            class="absolute w-full z-10 left-full ml-2 transform -translate-x-1/2 bg-violet-500 text-white text-xs rounded p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                            Secondary Tooltip
+                        </span>
+                    </div>
+
+                    <!-- Danger Tooltip -->
+                    <div class="relative group">
+                        <button class="bg-red-500 text-white px-4 py-2 rounded">Danger Tooltip</button>
+                        <span
+                            class="absolute w-full top-full mt-2 left-1/2 transform -translate-x-1/2 bg-red-500 text-white text-xs rounded p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                            Danger Tooltip
+                        </span>
+                    </div>
+
+                    <!-- Light Tooltip -->
+                    <div class="relative group">
+                        <button class="bg-gray-50 text-black px-4 py-2 rounded">Light Tooltip</button>
+                        <span
+                            class="absolute w-full top-full mt-2 left-1/2 transform -translate-x-1/2 bg-gray-50 text-black text-xs rounded p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                            Light Tooltip
+                        </span>
+                    </div>
+
+                    <!-- Dark Tooltip -->
+                    <div class="relative group">
+                        <button class="bg-black text-white px-4 py-2 rounded">Dark Tooltip</button>
+                        <span
+                            class="absolute w-full top-full mt-2 left-1/2 transform -translate-x-1/2 bg-black text-white text-xs rounded p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                            Dark Tooltip
+                        </span>
+                    </div>
+
+                    <!-- Success Tooltip -->
+                    <div class="relative group">
+                        <button class="bg-green-500 text-white px-4 py-2 rounded">Success Tooltip</button>
+                        <span
+                            class="absolute w-full -top-9 left-1/2 transform -translate-x-1/2 bg-green-500 text-white text-xs rounded p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                            Success Tooltip
+                        </span>
+                    </div>
+
+                    <!-- Warning Tooltip -->
+                    <div class="relative group">
+                        <button class="bg-yellow-500 text-white px-4 py-2 rounded">Warning Tooltip</button>
+                        <span
+                            class="absolute w-full top-full mt-2 left-1/2 transform -translate-x-1/2 bg-yellow-500 text-white text-xs rounded p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                            Warning Tooltip
+                        </span>
+                    </div>
+
+                    <!-- Info Tooltip -->
+                    <div class="relative group">
+                        <button class="bg-blue-400 text-white px-4 py-2 rounded">Info Tooltip</button>
+                        <span
+                            class="absolute w-full top-1/2 right-full mr-2 transform -translate-y-1/2 bg-blue-400 text-white text-xs rounded p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                            Info Tooltip
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-5 justify-center mt-4">
+                <!-- Disabled Elements -->
+                <div class="w-full bg-white p-6 rounded-lg shadow-lg mb-6">
+                    <h2 class="text-lg font-semibold mb-4">Disabled Elements</h2>
+                    <button
+                        class="relative group bg-violet-400 text-white px-4 py-2 rounded opacity-50 cursor-not-allowed"
+                        disabled>
+                        Disabled button
+                        <span
+                            class="btn btn-dark absolute w-full z-10 -top-11 left-1/2 transform -translate-x-1/2 text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100">
+                            Tooltip for disabled button
+                        </span>
+                    </button>
+                </div>
+
+                <!-- Tooltips for images -->
+                <div class="w-full bg-white p-6 rounded-lg shadow-lg mb-6">
+                    <h2 class="text-lg font-semibold mb-4">Tooltip For Images</h2>
+                    <div class="flex gap-4">
+                        <div class="relative group mt-6">
+                            <img src="https://i.pravatar.cc/48?img=24" alt="user name" title="user name" width="40"
+                                height="40" class="max-w-full rounded-full" />
+                            <span
+                                class="absolute w-fit whitespace-nowrap z-10 -top-11 left-1/2 transform -translate-x-1/2 bg-violet-500 text-white text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100">
+                                User Tooltip
+                            </span>
+                        </div>
+                        <div class="w-fit relative group mt-4">
+                            <img src="https://i.pravatar.cc/48?img=24" alt="user name" title="user name" width="48"
+                                height="48" class="max-w-full rounded-full" />
+                            <span
+                                class="absolute w-fit whitespace-nowrap z-10 -top-11 left-1/2 transform -translate-x-1/2 bg-violet-500 text-white text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100">
+                                User Tooltip
+                            </span>
+                        </div>
+                        <div class="w-fit relative group">
+                            <img src="https://i.pravatar.cc/48?img=24" alt="user name" title="user name" width="64"
+                                height="64" class="max-w-full rounded-full" />
+                            <span
+                                class="absolute w-fit whitespace-nowrap z-10 -top-11 left-1/2 transform -translate-x-1/2 bg-violet-500 text-white text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100">
+                                User Tooltip
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
