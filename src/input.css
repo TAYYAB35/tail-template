@@ -1460,3 +1460,31 @@ textarea {
 .strip-bar {
     @apply bg-[linear-gradient(45deg,#38a169_25%,#2f855a_25%,#2f855a_50%,#38a169_50%,#38a169_75%,#2f855a_75%)] h-3 rounded-full;
 }
+
+.increase-decrease {
+    @apply bg-white rounded-lg shadow-md p-4 w-full h-fit flex flex-col justify-between;
+}
+
+.table-dropdown {
+    @apply block px-4 py-2 text-[13px] font-normal text-gray-700 hover:bg-gray-100;
+}
+
+.table-header {
+    @apply border border-gray-200 text-[13px] font-medium py-3 px-6;
+}
+
+.tabe-data {
+    @apply py-3 px-6 border border-gray-200 text-[13px];
+}
+
+.table-emp_id {
+    @apply py-3 px-6 border border-gray-200 text-primary text-[14px];
+}
+
+.table-edit_button {
+    @apply rounded-md w-7 h-7 text-primary bg-blue-100 hover:bg-primary hover:!text-white p-1 cursor-pointer;
+}
+
+.table-delete_button {
+    @apply rounded-md w-7 h-7 text-danger bg-red-100 hover:bg-danger hover:!text-white p-1 cursor-pointer;
+}

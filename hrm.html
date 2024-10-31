@@ -16,7 +16,7 @@
                 <div class="w-full">
                     <!-- cards -->
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:!grid-cols-3 xl:!grid-cols-4 gap-3 lg:gap-6">
-                        <div class="bg-white rounded-lg shadow-md p-4 w-full h-fit flex flex-col justify-between">
+                        <div class="increase-decrease">
                             <div class="bg-gray-100 p-3">
                                 <div class="flex justify-between items-start">
                                     <div>
@@ -50,7 +50,7 @@
                             </div>
                         </div>
 
-                        <div class="bg-white rounded-lg shadow-md p-4 w-full h-fit flex flex-col justify-between">
+                        <div class="increase-decrease">
                             <div class="bg-gray-100 p-3">
                                 <div class="flex justify-between items-start">
                                     <div>
@@ -84,7 +84,7 @@
                             </div>
                         </div>
 
-                        <div class="bg-white rounded-lg shadow-md p-4 w-full h-fit flex flex-col justify-between">
+                        <div class="increase-decrease">
                             <div class="bg-gray-100 p-3">
                                 <div class="flex justify-between items-start">
                                     <div>
@@ -118,7 +118,7 @@
                             </div>
                         </div>
 
-                        <div class="bg-white rounded-lg shadow-md p-4 w-full h-fit flex flex-col justify-between">
+                        <div class="increase-decrease">
                             <div class="bg-gray-100 p-3">
                                 <div class="flex justify-between items-start">
                                     <div>
@@ -712,11 +712,11 @@
                                         <!-- Dropdown Menu -->
                                         <div id="dropdownMenu"
                                             class="hidden absolute right-0 mt-2 w-40 bg-white rounded-lg shadow-lg border border-gray-200">
-                                            <a href="#" class="block px-4 py-2 text-[13px] font-normal text-gray-700 hover:bg-gray-100">New</a>
+                                            <a href="#" class="table-dropdown">New</a>
                                             <a href="#"
-                                                class="block px-4 py-2 text-[13px] font-normal text-gray-700 hover:bg-gray-100">Popular</a>
+                                                class="table-dropdown">Popular</a>
                                             <a href="#"
-                                                class="block px-4 py-2 text-[13px] font-normal text-gray-700 hover:bg-gray-100">Relevant</a>
+                                                class="table-dropdown">Relevant</a>
                                         </div>
                                     </div>
                                 </div>
@@ -727,135 +727,135 @@
                                 <table class="min-w-full text-left table-auto border border-gray-200">
                                     <thead>
                                         <tr class="text-gray-600 text-center items-center leading-normal">
-                                            <th class="border border-gray-200 text-[13px] font-medium py-3 px-6">S.No</th>
-                                            <th class="border border-gray-200 text-[13px] font-medium py-3 px-6">Employee Id</th>
-                                            <th class="border border-gray-200 text-[13px] font-medium py-3 px-6">Employee Name</th>
-                                            <th class="border border-gray-200 text-[13px] font-medium py-3 px-6">Position</th>
-                                            <th class="border border-gray-200 text-[13px] font-medium py-3 px-6">Department</th>
-                                            <th class="border border-gray-200 text-[13px] font-medium py-3 px-6">Email</th>
-                                            <th class="border border-gray-200 text-[13px] font-medium py-3 px-6">Status</th>
-                                            <th class="border border-gray-200 text-[13px] font-medium py-3 px-6">Contact</th>
-                                            <th class="border border-gray-200 text-[13px] font-medium py-3 px-6">Salary</th>
-                                            <th class="border border-gray-200 text-[13px] font-medium py-3 px-6">Action</th>
+                                            <th class="table-header">S.No</th>
+                                            <th class="table-header">Employee Id</th>
+                                            <th class="table-header">Employee Name</th>
+                                            <th class="table-header">Position</th>
+                                            <th class="table-header">Department</th>
+                                            <th class="table-header">Email</th>
+                                            <th class="table-header">Status</th>
+                                            <th class="table-header">Contact</th>
+                                            <th class="table-header">Salary</th>
+                                            <th class="table-header">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody class="text-gray-700 text-sm">
                                         <!-- Example Row -->
                                         <tr class="border-b hover:bg-gray-100">
-                                            <td class="py-3 px-6 border border-gray-200 text-[13px]">01</td>
-                                            <td class="py-3 px-6 border border-gray-200 text-primary text-[14px]">#emp23520</td>
+                                            <td class="tabe-data">01</td>
+                                            <td class="table-emp_id">#emp23520</td>
                                             <td class="py-3 px-6 flex items-center space-x-2">
                                                 <img src="./assets/images/profile/user-1.jpg" alt="Avatar"
                                                     class="w-8 h-8 rounded-full">
-                                                <span>Richard Dom</span>
+                                                <span class="text-[13px] font-medium">Richard Dom</span>
                                             </td>
-                                            <td class="py-3 px-6 border border-gray-200 text-[13px]">Team Leader</td>
-                                            <td class="py-3 px-6 border border-gray-200 text-[13px]">Backend</td>
-                                            <td class="py-3 px-6 border border-gray-200 text-[13px]">richard116@demo.com</td>
+                                            <td class="tabe-data">Team Leader</td>
+                                            <td class="tabe-data">Backend</td>
+                                            <td class="tabe-data">richard116@demo.com</td>
                                             <td class="py-3 px-6 border border-gray-200">
                                                 <span
                                                     class="bg-green-50 text-success py-1 px-2 rounded-md text-xs">Active</span>
                                             </td>
-                                            <td class="py-3 px-6 border border-gray-200 text-[13px]">+0987654321</td>
-                                            <td class="py-3 px-6 border border-gray-200 text-[13px]">$15,000</td>
+                                            <td class="tabe-data">+0987654321</td>
+                                            <td class="tabe-data">$15,000</td>
                                             <td class="p-4">
                                                 <div class="flex gap-2 text-center justify-center">
                                                     <div
-                                                        class="rounded-md w-7 h-7 text-primary bg-blue-100 hover:bg-primary hover:!text-white p-1 cursor-pointer">
+                                                        class="table-edit_button">
                                                         <i class="fa-light fa-pen text-[12px]"></i>
                                                     </div>
                                                     <div
-                                                        class="rounded-md w-7 h-7 text-danger bg-red-100 hover:bg-danger hover:!text-white p-1 cursor-pointer">
+                                                        class="table-delete_button">
                                                         <i class="fa-regular fa-trash text-[12px]"></i>
                                                     </div>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr class="border-b hover:bg-gray-100">
-                                            <td class="py-3 px-6 border border-gray-200 text-[13px]">02</td>
-                                            <td class="py-3 px-6 border border-gray-200 text-primary text-[14px]">#emp23520</td>
+                                            <td class="tabe-data">02</td>
+                                            <td class="table-emp_id">#emp23520</td>
                                             <td class="py-3 px-6 flex items-center space-x-2">
                                                 <img src="./assets/images/profile/user-2.jpg" alt="Avatar"
                                                     class="w-8 h-8 rounded-full">
-                                                <span>Richard Dom</span>
+                                                <span class="text-[13px] font-medium">Richard Dom</span>
                                             </td>
-                                            <td class="py-3 px-6 border border-gray-200 text-[13px]">Team Leader</td>
-                                            <td class="py-3 px-6 border border-gray-200 text-[13px]">Backend</td>
-                                            <td class="py-3 px-6 border border-gray-200 text-[13px]">richard116@demo.com</td>
+                                            <td class="tabe-data">Team Leader</td>
+                                            <td class="tabe-data">Backend</td>
+                                            <td class="tabe-data">richard116@demo.com</td>
                                             <td class="py-3 px-6 border border-gray-200">
                                                 <span
                                                     class="bg-blue-50 text-info py-1 px-2 rounded-full text-xs">On Leave</span>
                                             </td>
-                                            <td class="py-3 px-6 border border-gray-200 text-[13px]">+0987654321</td>
-                                            <td class="py-3 px-6 border border-gray-200 text-[13px]">$15,000</td>
+                                            <td class="tabe-data">+0987654321</td>
+                                            <td class="tabe-data">$15,000</td>
                                             <td class="p-4">
                                                 <div class="flex gap-2 text-center justify-center">
                                                     <div
-                                                        class="rounded-md w-7 h-7 text-primary bg-blue-100 hover:bg-primary hover:!text-white p-1 cursor-pointer">
+                                                        class="table-edit_button">
                                                         <i class="fa-light fa-pen text-[12px]"></i>
                                                     </div>
                                                     <div
-                                                        class="rounded-md w-7 h-7 text-danger bg-red-100 hover:bg-danger hover:!text-white p-1 cursor-pointer">
+                                                        class="table-delete_button">
                                                         <i class="fa-regular fa-trash text-[12px]"></i>
                                                     </div>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr class="border-b hover:bg-gray-100">
-                                            <td class="py-3 px-6 border border-gray-200 text-[13px]">03</td>
-                                            <td class="py-3 px-6 border border-gray-200 text-primary text-[14px]">#emp23520</td>
+                                            <td class="tabe-data">03</td>
+                                            <td class="table-emp_id">#emp23520</td>
                                             <td class="py-3 px-6 flex items-center space-x-2">
                                                 <img src="./assets/images/profile/user-3.jpg" alt="Avatar"
                                                     class="w-8 h-8 rounded-full">
-                                                <span>Richard Dom</span>
+                                                <span class="text-[13px] font-medium">Richard Dom</span>
                                             </td>
-                                            <td class="py-3 px-6 border border-gray-200 text-[13px]">Team Leader</td>
-                                            <td class="py-3 px-6 border border-gray-200 text-[13px]">Backend</td>
-                                            <td class="py-3 px-6 border border-gray-200 text-[13px]">richard116@demo.com</td>
-                                            <td class="py-3 px-6 border border-gray-200 text-[13px]">
+                                            <td class="tabe-data">Team Leader</td>
+                                            <td class="tabe-data">Backend</td>
+                                            <td class="tabe-data">richard116@demo.com</td>
+                                            <td class="tabe-data">
                                                 <span
                                                     class="bg-red-50 text-danger py-1 px-2 rounded-full text-xs">Resigned</span>
                                             </td>
-                                            <td class="py-3 px-6 border border-gray-200 text-[13px]">+0987654321</td>
-                                            <td class="py-3 px-6 border border-gray-200 text-[13px]">$15,000</td>
+                                            <td class="tabe-data">+0987654321</td>
+                                            <td class="tabe-data">$15,000</td>
                                             <td class="p-4">
                                                 <div class="flex gap-2 text-center justify-center">
                                                     <div
-                                                        class="rounded-md w-7 h-7 text-primary bg-blue-100 hover:bg-primary hover:!text-white p-1 cursor-pointer">
+                                                        class="table-edit_button">
                                                         <i class="fa-light fa-pen text-[12px]"></i>
                                                     </div>
                                                     <div
-                                                        class="rounded-md w-7 h-7 text-danger bg-red-100 hover:bg-danger hover:!text-white p-1 cursor-pointer">
+                                                        class="table-delete_button">
                                                         <i class="fa-regular fa-trash text-[12px]"></i>
                                                     </div>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr class="border-b hover:bg-gray-100">
-                                            <td class="py-3 px-6 border border-gray-200 text-[13px]">04</td>
-                                            <td class="py-3 px-6 border border-gray-200 text-primary text-[14px]">#emp23520</td>
+                                            <td class="tabe-data">04</td>
+                                            <td class="table-emp_id">#emp23520</td>
                                             <td class="py-3 px-6 flex items-center space-x-2">
                                                 <img src="./assets/images/profile/user-4.jpg" alt="Avatar"
                                                     class="w-8 h-8 rounded-full">
-                                                <span>Richard Dom</span>
+                                                <span class="text-[13px] font-medium">Richard Dom</span>
                                             </td>
-                                            <td class="py-3 px-6 border border-gray-200 text-[13px]">Team Leader</td>
-                                            <td class="py-3 px-6 border border-gray-200 text-[13px]">Backend</td>
-                                            <td class="py-3 px-6 border border-gray-200 text-[13px]">richard116@demo.com</td>
-                                            <td class="py-3 px-6 border border-gray-200 text-[13px]">
+                                            <td class="tabe-data">Team Leader</td>
+                                            <td class="tabe-data">Backend</td>
+                                            <td class="tabe-data">richard116@demo.com</td>
+                                            <td class="tabe-data">
                                                 <span
                                                     class="bg-green-50 text-success py-1 px-2 rounded-full text-xs">Active</span>
                                             </td>
-                                            <td class="py-3 px-6 border border-gray-200 text-[13px]">+0987654321</td>
-                                            <td class="py-3 px-6 border border-gray-200 text-[13px]">$15,000</td>
+                                            <td class="tabe-data">+0987654321</td>
+                                            <td class="tabe-data">$15,000</td>
                                             <td class="p-4">
                                                 <div class="flex gap-2 text-center justify-center">
                                                     <div
-                                                        class="rounded-md w-7 h-7 text-primary bg-blue-100 hover:bg-primary hover:!text-white p-1 cursor-pointer">
+                                                        class="table-edit_button">
                                                         <i class="fa-light fa-pen text-[12px]"></i>
                                                     </div>
                                                     <div
-                                                        class="rounded-md w-7 h-7 text-danger bg-red-100 hover:bg-danger hover:!text-white p-1 cursor-pointer">
+                                                        class="table-delete_button">
                                                         <i class="fa-regular fa-trash text-[12px]"></i>
                                                     </div>
                                                 </div>
